@@ -1,4 +1,3 @@
-sandwich_type = ""
 subtotal = 0.0
 
 # Explaining Menu Options
@@ -16,4 +15,10 @@ elif sandwich_type == "tofu":
 else:
     print("You chose beef, which will be $6.25")
     subtotal += 6.25
+
+drink = input("Would you like a beverage?")
+drink_size = input("What size drink?")
+
+if drink == "yes"
+    if drink_size ==
 
