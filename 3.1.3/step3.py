@@ -4,7 +4,6 @@ subtotal = 0.0
 print("What type of sandwich would you like?")
 print("chicken $5.25, beef $6.25, tofu $5.75")
 sandwich_type = input("Sandwich Choice: ")
-
 # Calculating Sandwich Price
 if sandwich_type == "chicken":
     print("You chose chicken, which will be $5.25")
@@ -47,18 +46,13 @@ if fries == "yes":
         print("You chose large, which will be $2.00")
         subtotal += 2.00
 
-ketchup = input(int("How many ketchup packets would you like?"))
+ketchup = float(input("How many ketchup packets would you like? $0.25 each"))
+if ketchup >= 0:
+    subtotal += ketchup * .25
 
 
 if drink == "yes":
     if fries == "yes":
-        if ketchup > 0:
-            subtotal -= 1.00
-
-
-
-
-
-
+        subtotal -= 1.00
 print(subtotal)
 
